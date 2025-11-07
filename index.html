@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="stuff/BCLOGO.png" alt="">
+            <span>BC</span>
+        </a>
+
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="about.html"  >About</a>
+            <a href="gallery.html" >Gallery</a>
+            <a href="contacts.html" >Contacts</a>
+        </nav>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+
+     menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+
+    <section class="home1">
+        <div class="parallax-text">
+            <div class="line">
+                <span style="--speed: 0.3">S</span>
+                <span style="--speed: 0.3">h</span>
+                <span style="--speed: 0.5">a</span>
+                <span style="--speed: 0.3">p</span>
+                <span style="--speed: 0.3">e</span>
+                <span style="--speed: 0.3">d</span>
+                <span class="space">&nbsp;</span>
+                <span style="--speed: 1.0">b</span>
+                <span style="--speed: 0.6">y</span>
+            </div>
+        
+            <div class="line">
+                <span style="--speed: 1.2">I</span>
+                <span style="--speed: 1.5">m</span>
+                <span style="--speed: 0.5">a</span>
+                <span style="--speed: 1.8">g</span>
+                <span style="--speed: 1.2">i</span>
+                <span style="--speed: 1.8">n</span>
+                <span style="--speed: 0.5">a</span>
+                <span style="--speed: 2.0">t</span>
+                <span style="--speed: 1.2">i</span>
+                <span style="--speed: 2.2">o</span>
+                <span style="--speed: 1.8">n</span>
+                <span style="--speed: 0.3">.</span>
+            </div>
+        </div>
+    </section >
+
+    <section class="home2">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1n2Z2YeKj7M?si=cyFqEEfAOeKuZ1TX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="home3">
+        <div class="briefabout">
+            <div class="text-content">
+                <div class="line">
+                    <p>
+                        An Artist that integrates skill with technology to innovate design.
+                    </p>
+                </div>
+
+                <div class="line">
+                    <p>
+                        Interested in making pieces that speak for themselves. I believe a great design can change the course of the norm.
+                    </p>
+                </div>
+
+            <div class="toabout">
+                <a href="about.html">About me</a>
+            </div>
+        </div>
+    </section>
+<!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <footer class="footer">
+        <H3>Let's work together! </H3>
+
+        <hr>
+        <div class="gmail-button">
+            <a href="mailto: colladobrenanwilliard@gmail.com"id="gmail">colladobrenanwilliard@gmail.com</a>
+        </div>
+        
+        <div class="contact-button">
+            <a href="contacts.html">Get in touch</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="sometext">
+            Web Developer | Designer | Artist | Environmentalist | Passionate on making things aesthetically pleasing
+            </p>
+
+            <p class="copyright">
+                Brenan Collado 2025
+            </p>
+
+            <div class="social">
+            <a href="https://www.facebook.com/brenan.collado.2024/">Facebook</a>
+            <a href="https://www.instagram.com/mantapxls/">Instagram</a>
+            </div>
+
+        </div>  
+
+    </footer>
+<!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <script>
+    // Parallax effect for text
+        // scroll detector
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset; //constant variable named scrolled
+            const parallaxSpans = document.querySelectorAll('.parallax-text span');
+        
+            parallaxSpans.forEach(span => {
+                const speed = span.style.getPropertyValue('--speed');
+                const yPos = -(scrolled * speed);
+                span.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

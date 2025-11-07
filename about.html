@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="stuff/BCLOGO.png" alt="">
+            <span>BC</span>
+        </a>
+
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="#" class="active" >About</a>
+            <a href="gallery.html" >Gallery</a>
+            <a href="contacts.html" >Contacts</a>
+        </nav>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+
+     menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+
+    <section class="about">
+        <div class="about-img">
+            <img src="stuff/colladoFormal.png" alt="">
+        </div>
+        <div class="about-content">
+            <h1>Hey! It's<span> Brenan</span>,</h1>
+            <div class="container">
+                <h3>I'm <span class="auto-type"></span></h3>
+            </div>
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            
+            <script>
+                var typed = new Typed(".auto-type",{
+                    strings: ["a Web Developer", "a Programmer", "an Artist."],
+                    typeSpeed: 150,
+                    backSpeed: 150,
+                    loop: true
+                })
+
+            </script>
+            
+            <div class="description">
+                <p> 
+                    I am a self thought graphic designer based in the Philippines with web development and programming experience.
+                    I am currently attending third year at The Polytechnic University of the Philippines as an Information Technology student.
+                </p>
+            </div>
+            <div class="cv-button">
+                <a target="_blank " href="stuff/Collado_Resume.pdf">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <p>I have experience with these technologies</p>
+
+            <div class="skills-logos">
+                <img src="stuff/html.png" alt="HTML">
+                <img src="stuff/css.png" alt="CSS">
+                <img src="stuff/js.png" alt="JavaScript">
+                <img src="stuff/python.png" alt="Python">
+                <img src="stuff/c.png" alt="C">
+                <img src="stuff/canva.png" alt="Canva">
+                <img src="stuff/figma.png" alt="Figma">
+            </div>
+
+        </div>
+    </section>
+    
+<!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <footer class="footer">
+        <H3>Let's work together! </H3>
+
+        <hr>
+        <div class="gmail-button">
+            <a href="mailto: colladobrenanwilliard@gmail.com"id="gmail">colladobrenanwilliard@gmail.com</a>
+        </div>
+        
+        <div class="contact-button">
+            <a href="contacts.html">Get in touch</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="sometext">
+                Web Developer | Designer | Artist | Environmentalist | Passionate on making things aesthetically pleasing
+            </p>
+
+            <p class="copyright">
+                Brenan Collado 2025
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com/brenan.collado.2024/">Facebook</a>
+                <a href="https://www.instagram.com/mantapxls/">Instagram</a>
+            </div>
+
+        </div>  
+
+    </footer>
+    <!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+</body>
+</html>

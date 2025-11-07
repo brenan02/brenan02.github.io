@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="stuff/BCLOGO.png" alt="">
+            <span>BC</span>
+        </a>
+
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="about.html"  >About</a>
+            <a href="gallery.html" >Gallery</a>
+            <a href="#" class="active">Contacts</a>
+        </nav>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+
+     menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+<!--HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+
+    <section class="contact">
+        <div class="contact-box">
+
+            <div class="line">
+                BRENAN COLLADO VISUAL ARTIST & DESIGNER MNL →<a href="https://www.facebook.com/brenan.collado.2024/" target="_blank">Facebook</a> →<a href="https://www.instagram.com/mantapxls/" target="_blank">Instagram</a>
+            </div>
+
+        </div>
+    </section>
+
+
+<!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    <footer class="footer">
+        <H3>Let's work together! </H3>
+
+        <hr>
+        <div class="gmail-button">
+            <a href="mailto: colladobrenanwilliard@gmail.com"id="gmail">colladobrenanwilliard@gmail.com</a>
+        </div>
+        
+        <div class="contact-button">
+            <a href="contacts.html">Get in touch</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="sometext">
+            Web Developer | Designer | Artist | Environmentalist | Passionate on making things aesthetically pleasing
+            </p>
+
+            <p class="copyright">
+                Brenan Collado 2025
+            </p>
+
+            <div class="social">
+            <a href="https://www.facebook.com/brenan.collado.2024/">Facebook</a>
+            <a href="https://www.instagram.com/mantapxls/">Instagram</a>
+            </div>
+
+        </div>  
+
+    </footer>
+<!--FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+    
+</body>
+
+</html>
