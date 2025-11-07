@@ -4,7 +4,10 @@ Welcome to my personal portfolio website!
 A clean, modern portfolio showcasing my best web development projects and skills, built using HTML, CSS, and Javascript.
 This site showcases my work, skills, and projects as an Information Technology student and aspiring web developer.
 
-## How to run locally:
+## Live Website
+https://brenan02.github.io
+
+### How to run locally:
 1. Download or Clone the Repository
    - Click the **Code** button above.
    - Select **Download ZIP**, then extract the folder.
@@ -20,7 +23,7 @@ This site showcases my work, skills, and projects as an Information Technology s
    - Find the file named index.html
    - Double-click it to open in your browser
      
-###Credits
+#### Credits
 Website layout concept inspired by:
 https://www.bettinasosa.com/
 
